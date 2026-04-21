@@ -12,6 +12,7 @@ from app.llm.prompts import (
     build_analysis_prompt,
     build_dialog_prompt,
     build_exam_prompt,
+    build_reading_prompt,
 )
 from app.llm.scenarios import Scenario
 
@@ -154,6 +155,55 @@ async def exam_final_report(
         return {
             "covered_angles": [],
             "fluency_score": 3,
+            "unnatural_phrases": [],
+            "missed_vocabulary": [],
+            "summary_ru": raw[:500],
+        }
+
+
+async def reading_reply(
+    text: dict,
+    history: list[dict],
+    *,
+    level_hint: str | None = None,
+) -> str:
+    messages = [
+        {"role": "system", "content": build_reading_prompt(text, level_hint=level_hint)},
+        *history,
+    ]
+    resp = await grok.chat.completions.create(
+        model=_settings.xai_model,
+        messages=messages,
+        temperature=0.5,
+    )
+    return resp.choices[0].message.content or ""
+
+
+async def reading_final_report(
+    text: dict,
+    history: list[dict],
+    *,
+    level_hint: str | None = None,
+) -> dict:
+    messages = [
+        {"role": "system", "content": build_reading_prompt(text, level_hint=level_hint)},
+        *history,
+        {"role": "user", "content": "<<FINISH>>"},
+    ]
+    resp = await grok.chat.completions.create(
+        model=_settings.xai_model,
+        messages=messages,
+        temperature=0.2,
+        response_format={"type": "json_object"},
+    )
+    raw = resp.choices[0].message.content or "{}"
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        log.warning("reading report: non-JSON")
+        return {
+            "per_question": [],
+            "understanding_score": 3,
             "unnatural_phrases": [],
             "missed_vocabulary": [],
             "summary_ru": raw[:500],

@@ -132,6 +132,15 @@ export default function Home() {
         </button>
         <button
           className="mode-card"
+          data-accent="red"
+          onClick={() => navigate("/reading")}
+        >
+          <div className="mode-icon">📖</div>
+          <div className="mode-title">Lasīšana</div>
+          <div className="mode-sub">Teksts + 5 jautājumi</div>
+        </button>
+        <button
+          className="mode-card"
           data-accent="purple"
           onClick={() => navigate("/phrases")}
         >

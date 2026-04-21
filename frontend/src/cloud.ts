@@ -7,7 +7,7 @@ import { tg } from "./tg";
 const LS_FALLBACK = "lvaloda_active_session";
 
 export interface ActiveSession {
-  mode: "dialog" | "exam" | "picture" | "shadowing";
+  mode: "dialog" | "exam" | "picture" | "shadowing" | "reading";
   sessionId: number;
   scenario: string;
   /** Where to send the user back to */

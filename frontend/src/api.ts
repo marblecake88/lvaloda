@@ -335,6 +335,65 @@ export const api = {
       body: JSON.stringify({ session_id, picture_id }),
     }),
 
+  // --- Reading (PMLP Latvieši un līvi first task) ---
+  readingTexts: () =>
+    request<{
+      topics: Record<string, string>;
+      items: {
+        id: string;
+        title_lv: string;
+        topic: string;
+        topic_title_lv: string;
+        preview: string;
+        source: string | null;
+      }[];
+    }>("/api/reading/texts"),
+
+  startReading: (text_id: string) =>
+    request<{
+      session_id: number;
+      text: {
+        id: string;
+        title_lv: string;
+        topic: string;
+        topic_title_lv: string;
+        body: string;
+        questions: string[];
+        source: string | null;
+      };
+      reply: string;
+    }>("/api/reading/start", {
+      method: "POST",
+      body: JSON.stringify({ text_id }),
+    }),
+
+  sendReading: (session_id: number, text: string) =>
+    request<{ reply: string }>("/api/reading/message", {
+      method: "POST",
+      body: JSON.stringify({ session_id, text }),
+    }),
+
+  finishReading: (session_id: number) =>
+    request<{
+      report: {
+        per_question: {
+          question: string;
+          user_answer_summary: string;
+          understanding: "full" | "partial" | "missed";
+          correct_answer_lv: string;
+          note_ru: string;
+        }[];
+        understanding_score: number;
+        unnatural_phrases: { said: string; better: string; note_ru: string }[];
+        missed_vocabulary: string[];
+        summary_ru: string;
+      };
+      text: { id: string; title_lv: string; questions: string[] };
+    }>("/api/reading/finish", {
+      method: "POST",
+      body: JSON.stringify({ session_id }),
+    }),
+
   // --- Translator ---
   translateText: (text: string) =>
     request<{ source_lang: string; source_text: string; translation: string }>(

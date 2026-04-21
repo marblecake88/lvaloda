@@ -11,6 +11,8 @@ import Shadowing from "./screens/Shadowing";
 import Picture from "./screens/Picture";
 import ShadowingPicker from "./screens/ShadowingPicker";
 import Phrases, { PhraseDrill } from "./screens/Phrases";
+import Reading from "./screens/Reading";
+import ReadingPicker from "./screens/ReadingPicker";
 import Translate from "./screens/Translate";
 
 export default function App() {
@@ -30,6 +32,8 @@ export default function App() {
       <Route path="/picture" element={<Picture />} />
       <Route path="/phrases" element={<Phrases />} />
       <Route path="/phrases/:category" element={<PhraseDrill />} />
+      <Route path="/reading" element={<ReadingPicker />} />
+      <Route path="/reading/:textId" element={<Reading />} />
       <Route path="/translate" element={<Translate />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

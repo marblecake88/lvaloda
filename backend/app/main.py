@@ -18,6 +18,7 @@ from app.api import minimal_pairs as minimal_pairs_api
 from app.api import phrases as phrases_api
 from app.api import picture as picture_api
 from app.api import prep as prep_api
+from app.api import reading as reading_api
 from app.api import reflection as reflection_api
 from app.api import scenarios as scenarios_api
 from app.api import shadowing as shadowing_api
@@ -85,6 +86,7 @@ app.include_router(shadowing_api.router)
 app.include_router(minimal_pairs_api.router)
 app.include_router(picture_api.router)
 app.include_router(phrases_api.router)
+app.include_router(reading_api.router)
 app.include_router(translate_api.router)
 
 
