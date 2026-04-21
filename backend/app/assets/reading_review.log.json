@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "gimenes_janu_svinešana",
+    "confidence": 4,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "auž puķu vainagus",
+        "fix": "pīš puķu vainagus (pareizā darbības vārda forma vainagiem)"
+      },
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "zarina muižas durvis",
+        "fix": "zārina mājas durvis (garumzīme zārina un loģiska tradīcija: mājas, nevis muižas)"
+      },
+      {
+        "where": "body",
+        "type": "stils",
+        "original": "Ģimenes Jāņu svinēšana",
+        "fix": "ģimenes Jāņu svinēšana (mazais burts, nav īpašvārds)"
+      },
+      {
+        "where": "q3",
+        "type": "ortogrāfija",
+        "original": "Ģimenēs",
+        "fix": "ģimenēs (mazais burts)"
+      },
+      {
+        "where": "q4",
+        "type": "jautājums",
+        "original": "No kurienes vāc zāles un ziedus vainagiem?",
+        "fix": "Kas kopā vāc zāles un ziedus vainagiem? (atbilde skaidri tekstā: bērni un mazbērni; iepriekšējais nav atbildams no teksta)"
+      },
+      {
+        "where": "q5",
+        "type": "stils",
+        "original": "Ko nedrīkst aizmirst pie ugunskura?",
+        "fix": "Ko nedrīkst aizmirst Jāņu svinēšanā? (precīzāks, atbilst tekstam bez pievienota 'pie ugunskura', kas nav tekstā; saglabā tipu)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "vecvecaku_loma_gimenes",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "neizstājamo",
+        "fix": "neaizstājamo (pareiza rakstība)"
+      },
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "lielpilsētās",
+        "fix": "lielpilsētās (pareiza rakstība)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "Iesaka viņus iesaistīt",
+        "fix": "Ieteicams viņus iesaistīt (nepabeigts teikums, padarīts gramatiski pareizu)"
+      },
+      {
+        "where": "body",
+        "type": "stils",
+        "original": "emocionālu atbalstu paaudžu starpā",
+        "fix": "emocionālo atbalstu starp paaudzēm (dabiskāka un precīzāka frāze)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "nepārslogotu veselību",
+        "fix": "nepārslogotu viņu veselību (saskaņošana ar subjektu)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "bernu_dzimsanas_dienas",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "pieturzīmes",
+        "original": "„Laimīgo dzimšanas dienu”",
+        "fix": "\"Laimīgo dzimšanas dienu\" (pareizas taisnas pēdiņas \"...\" pēc standarta)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "gimenes_vakarinjas",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "izplatīti",
+        "fix": "izplatīts (saskaņošana ar 'tas' – vienskaitlis, vīriešu dzimta)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "pīkst sulas",
+        "fix": "pilda sulas (pareiza forma – pildīt glāzes ar sulu, nevis čaukstēt)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "kazu_tradicijas",
+    "confidence": 4,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "ir svarīga ģimenes dzīves sastāvdaļa",
+        "fix": "ir svarīgas ģimenes dzīves sastāvdaļu (saskaņošana ar 'tradīcijas' – siev. dz. daudzsk.)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "pelēkajiem zirņiem un kūku",
+        "fix": "pelēkajiem zirņiem un kūkām (locījuma saskaņošana datīvs daudzsk.)"
+      },
+      {
+        "where": "body",
+        "type": "stils",
+        "original": "Rīgā vai Daugavpilī pērk",
+        "fix": "Rīgā un Daugavpilī pērk (precizēts sakarā ar Vidzemi/Latgali, labāka loģika)"
+      },
+      {
+        "where": "q2",
+        "type": "jautājums",
+        "original": "Kāpēc kāzas Latvijā biežāk svin vasarā?",
+        "fix": "Kāpēc kāzu tradīcijas kļūst aktuālas mūsdienās? (nav iemesla tekstā par vasaru; tagad atbilde no teksta – lai saglabātu mantojumu utt.; saglabā iemesla tipu)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "dzive_dazdzivoklu_nama",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "stils",
+        "original": "Šāda dzīvesveida veids",
+        "fix": "Šis dzīvesveids (noņemts liekais 'veids' kā pleonasm)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "Iesaka neizplatīt",
+        "fix": "Ieteicams neizplatīt (pievienots subjekts/impersonāla forma skaidrībai un stilam)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "lauku_maja_piemajas_darzs",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "un tuvāk dabu",
+        "fix": "un ir tuvāk dabai (lokatīvs pēc 'tuvāk'; pievienots 'ir' skaidrībai)"
+      },
+      {
+        "where": "body",
+        "type": "pieturzīmes",
+        "original": "Vidzemē, piemēram, pie Siguldas, un Kurzemē",
+        "fix": "Vidzemē – piemēram, pie Siguldas – un Kurzemē (defise iekavām ar 'piemēram')"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "dzivokla_ire_riga",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "vasarnicas_latvija",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "būvēts aptuveni 40 tūkstošus jaunu vasarnīcu",
+        "fix": "ir būvētas aptuveni 40 tūkstoši jaunu vasarnīcu (pareiza dzimta sieviešu plurālam, nomin. skaitļa forma pasīvā konstrukcijā)"
+      },
+      {
+        "where": "q1",
+        "type": "gramatika",
+        "original": "Cik daudz jaunu vasarnīcu būvēts Latvijā pēdējos 20 gados?",
+        "fix": "Cik daudz jaunu vasarnīcu ir būvētas Latvijā pēdējos 20 gados? (pievienots 'ir' un sieviešu dzimta plurālam, lai gramatiski korekts jautājums)"
+      },
+      {
+        "where": "q4",
+        "type": "jautājums",
+        "original": "Kādas vietas Latvijā ir populāras vasarnīcām?",
+        "fix": "nedaudz pārformulēts no teksta, bet saglabāts; oriģināls OK, bet nodrošināta skaidrība (nav izmaiņu, bet pārbaudīts)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "dzivosana_mikrorajona",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "stils",
+        "original": "Šī dzīvesvieta",
+        "fix": "Šāda dzīvesvieta (plurāla konteksta dēļ, dabiskāks stils)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "kopīga atpūtas vietas",
+        "fix": "kopīgās atpūtas vietas (skaitļa saskaņošana ar uzskaitījumu)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "kopīgās rotaļlaukumus",
+        "fix": "kopīgos rotaļlaukumus (dzimtas saskaņošana ar vīriešu dzimtu)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "Iesaka apmeklēt",
+        "fix": "Iedzīvotājiem iesaka apmeklēt (subjekta skaidrība un datīvs)"
+      },
+      {
+        "where": "q5",
+        "type": "jautājums",
+        "original": "Ko iesaka sociologi mikrorajona iedzīvotājiem?",
+        "fix": "Ko uzskata sociologi par aktīvu līdzdalību mikrorajona dzīvē? (precizē atbilstību tekstam, saglabā paplašinājuma tipu)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "atalinaty_darbs_latvija",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "skoleanu-vasaras-darbi",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "parkvalifikacija_pieaugusajiem",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "ātra kursus",
+        "fix": "ātrus kursus (saskaņošana: īpašības vārda akuzatīvs v.dz. ds. ar 'kursus')"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "popular_jobs_youth",
+    "confidence": 4,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "vairāk nekā tūkstoti",
+        "fix": "vairāk nekā tūkstotis (pēc 'nekā' lieto nominativu: tūkstotis)"
+      },
+      {
+        "where": "q4",
+        "type": "jautājums",
+        "original": "Ko iesaka nedarīt, apgūstot profesiju?",
+        "fix": "Cik daudz absolventu Rīgas IT uzņēmumi pieņem darbā katru gadu? (neprecīzs oriģinālais, nav tiešas 'nedarīt' ieteikuma; nomainīts uz detaļas tipu ar skaidru atbildi tekstā, lai aptvertu 5 dažādus tipus)"
+      },
+      {
+        "where": "q2",
+        "type": "jautājums",
+        "original": "Kāpēc jaunieši izvēlas šīs profesijas?",
+        "fix": "Saglabāts, bet kontekstā skaidrs (darba tirgus mainās); iemesla tips"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "rokdarbi_hobijs",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "rokmēri",
+        "fix": "rokdarbi (pareizs termins vietā par drukas kļūdu 'rokmēri')"
+      },
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "rokmēriem",
+        "fix": "rokdarbjiem (locījums pareizajam terminam 'rokdarbi')"
+      },
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "rokmērus",
+        "fix": "rokdarbus (locījums pareizajam terminam)"
+      },
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "rokmēru",
+        "fix": "rokdarbu (ģenitīvs pareizajam terminam)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "lielā rokmēru festivāls",
+        "fix": "lielais rokdarbu festivāls (dzimtes saskaņošana: festivāls vīriešu dzimta)"
+      },
+      {
+        "where": "body",
+        "type": "stils",
+        "original": "Tipiski cilvēki",
+        "fix": "Parasti cilvēki (dabiskāks, neformāls stils vietā par skolas stilu)"
+      },
+      {
+        "where": "q1",
+        "type": "ortogrāfija",
+        "original": "rokmēri",
+        "fix": "rokdarbi (pareizs termins)"
+      },
+      {
+        "where": "q2",
+        "type": "ortogrāfija",
+        "original": "rokmēriem",
+        "fix": "rokdarbjiem (locījums pareizajam terminam)"
+      },
+      {
+        "where": "q3",
+        "type": "ortogrāfija",
+        "original": "rokmērus",
+        "fix": "rokdarbus (locījums pareizajam terminam)"
+      },
+      {
+        "where": "q4",
+        "type": "ortogrāfija",
+        "original": "rokmēriem",
+        "fix": "rokdarbjiem (locījums pareizajam terminam)"
+      },
+      {
+        "where": "q5",
+        "type": "ortogrāfija",
+        "original": "rokmēru",
+        "fix": "rokdarbu (ģenitīvs pareizajam terminam)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "kaiminattiecibas_daudzdzirovklu_maja",
+    "confidence": 4,
+    "issues": [
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "pasta Kastītēm",
+        "fix": "pasta kastītēm (mazais burts pēc 'pasta', kā sastāvdaļas nosaukums)"
+      },
+      {
+        "where": "q1",
+        "type": "gramatika",
+        "original": "Cik procentus iedzīvotāju Rīgā saskārušies ar kaimiņu sūdzībām?",
+        "fix": "Cik procenti iedzīvotāju Rīgā ir saskārušies ar sūdzībām? (nominatīvs 'procenti', pievienots 'ir' teikuma pilnīgumam, precizēts uz teksta 'sūdzībām')"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "ka_latviesi_iepazistas",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "davanu_pasniegsana_kaiminjiem",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "nameju",
+        "fix": "namniekiem (pareizs datīvs plurālam: 'ar namniekiem')"
+      },
+      {
+        "where": "q2",
+        "type": "jautājums",
+        "original": "Kāpēc dāvanu pasniedz ar abām rokām?",
+        "fix": "Kāpēc nedrīkst dāvināt asus priekšmetus vai pulksteni? (atbilde tekstā: simbolizē šķiršanos; nodrošina iemesla tipu)"
+      },
+      {
+        "where": "q3",
+        "type": "jautājums",
+        "original": "No kā nedrīkst būt dāvana kaimiņiem?",
+        "fix": "Kā pasniedz dāvanu? (atbilde tekstā: ar abām rokām, smaidot un izsakot labus vārdus; nodrošina veida tipu, labāka gramatika)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "palidziba_draugiem_gruta_bridi",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "ģimenes krīzes",
+        "fix": "ģimenes krīzi (pareizs akuzatīvs uzskaitījumā pēc 'piemēram')"
+      },
+      {
+        "where": "q5",
+        "type": "gramatika",
+        "original": "Ko iesaka psihologi sākt ar palīdzību draugiem?",
+        "fix": "Ar ko speciālisti iesaka sākt palīdzību draugiem? (pareiza jautājuma struktūra 'ar ko'; sinhronizē ar 'speciālisti' tekstā)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "pieklajibas_frazes_ikdiena",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "pateic",
+        "fix": "pateicies (pareiza imperatīva forma 2. pers. viensk. no 'pateikties')"
+      },
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "jā māca",
+        "fix": "jāmāca (nav atstarpes starp 'jā' un infinitīvu)"
+      },
+      {
+        "where": "body",
+        "type": "pieturzīmes",
+        "original": "„Labdien!“ u.c.",
+        "fix": "\"Labdien!\" (taisnās pēdiņas pēc norādēm)"
+      },
+      {
+        "where": "q1",
+        "type": "pieturzīmes",
+        "original": "„Labdien!“ un „Paldies!“",
+        "fix": "\"Labdien!\" un \"Paldies!\" (taisnās pēdiņas pēc norādēm)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "dziesmu_deju_svetki",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "q2",
+        "type": "jautājums",
+        "original": "Kāpēc Dziesmu un deju svētki ir iekļauti UNESCO sarakstā?",
+        "fix": "Mainīts, jo tekstā UNESCO sarakstā iekļautas tradīcijas, nevis svētki paši; jauns jautājums saglabā iemesla tipu, atbilde ('lai saglabātu latviešu valodu un kultūru mūsdienās') tieši no teksta."
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "latvijas_muzikas_skatuve",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "teatra_apmeklesana",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "stils",
+        "original": "nokārtoinātu somas",
+        "fix": "noliktu somas (dabiskāks un precīzāks izteiciens teātra kontekstā, saglabā saturu)"
+      },
+      {
+        "where": "q2",
+        "type": "jautājums",
+        "original": "Kāpēc cilvēki Latvijā apmeklē teātri aukstajos mēnešos?",
+        "fix": "Kāpēc cilvēki Latvijā apmeklē teātri? (specifisks iemesls aukstajiem mēnešiem nav dots tekstā, tagad atbilde tieši no 1. rindkopas)"
+      },
+      {
+        "where": "q1",
+        "type": "jautājums",
+        "original": "Kurās Rīgas teātros notiek izrādes?",
+        "fix": "numurēts ar 1. (saglabā formātu, bet precizē numerāciju visos, kā oriģinālā)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "latvijas_muzeji",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "latviesu_kino_musdienas",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "pieturzīmes",
+        "original": "„Dvēseļu putenis”, „Tēvs Nakts”, „Splendid Palace”, „Riga IFF”, „Baltijas animācijas studijas”",
+        "fix": "Mainīts uz \"...\" – saskaņā ar politiku pareizām pēdiņām \"...\"."
+      },
+      {
+        "where": "q4",
+        "type": "pieturzīmes",
+        "original": "„Riga IFF”",
+        "fix": "Mainīts uz \"Riga IFF\" – saskaņā ar politiku pareizām pēdiņām \"...\"."
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "pirts_tradicija_latvija",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "stils",
+        "original": "sazvanīšanos",
+        "fix": "sazināšanos (nepareizs vārds kontekstā, nozīmē zvanīšanos, nevis saziņu)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "publiskās piršu",
+        "fix": "publisko piršu (adjektīva dzimta un skaitlis saskaņots ar ģenitīvu plurālu)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "atvelk vēsā gaisā",
+        "fix": "atvelkas vēsā gaisā (darbības vārda persona saskaņota ar subjektu 'cilvēki' plurāl)"
+      },
+      {
+        "where": "q1",
+        "type": "gramatika",
+        "original": "publiskās piršu",
+        "fix": "publisko piršu (adjektīva dzimta un skaitlis saskaņots ar ģenitīvu plurālu)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "makskeereshana_vasara",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "pastaigas_mezā",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "q5",
+        "type": "jautājums",
+        "original": "Ko ārsti iesaka darīt pastaigās mežā?",
+        "fix": "Nomainīts uz 'Cik ilgi dienā ārsti iesaka pastaigas mežā?', jo oriģinālais nav tieši atbildams no teksta (ārsti iesaka pašas pastaigas, nevis darbības tajās); jaunais nodrošina precīzu atbildi 'vismaz 30 minūtes' un aptver paplašinājuma tipu (ieteikums no ārstiem)."
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "brivpratigais_darbs",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "q5",
+        "type": "jautājums",
+        "original": "Ko sociologi iesaka ikvienam darīt vismaz reizi gadā?",
+        "fix": "Ko speciālisti iesaka ikvienam darīt vismaz reizi gadā? (tekstā iesaku speciālisti, nevis sociologi; sociologi uzskata par veselību)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "gramatu_lasisana_vakos",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "pieturzīmes",
+        "original": "„Lasām vakaros”",
+        "fix": "\"Lasām vakaros\" (pareizas taisnas pēdiņas pēc norādēm)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "hokejs_latvija",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "pieturzīmes",
+        "original": "„Dinamo Rīga”",
+        "fix": "\"Dinamo Rīga\" (pareizas dubultās pēdiņas \"...\" pēc vadlīnijām)"
+      },
+      {
+        "where": "q1",
+        "type": "pieturzīmes",
+        "original": "„Dinamo Rīga”",
+        "fix": "\"Dinamo Rīga\" (pareizas dubultās pēdiņas \"...\" pēc vadlīnijām)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "skriesana_valasprieks",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "cietas asfaltes",
+        "fix": "cietā asfalta (pareizs vīriešu dzimtas lokatīvs pēc 'uz'; 'asfalts' ir vīriešu dzimta)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "senu_lasisana_rudeni",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "q3",
+        "type": "stils",
+        "original": "Ko izmanto sēņu lasīšanā no priekšmetiem?",
+        "fix": "Kādus priekšmetus izmanto sēņu lasīšanā? (dabiskāks, ne-skolas stila formulējums, saglabā atbildes saturu)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "darzkopiba_kak_atputa",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "dabas_fotografesana",
+    "confidence": 4,
+    "issues": [
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "ziedu rasu",
+        "fix": "ziedu rūsu (pareiza garumzīme akuzatīvā)"
+      },
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "camouflāžas",
+        "fix": "kamuflāžas (pareiza latviešu rakstība aizņemtajam vārdam)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "Nedrīkst traucēt savvaļas dzīvniekus, tuvojoties pārāk tuvu, un iesaka valkāt klusinātus apavus un camouflāžas apģērbu.",
+        "fix": "Nedrīkst traucēt savvaļas dzīvniekus, tuvojoties tiem pārāk tuvu, un ieteicams valkāt klusinātus apavus un kamuflāžas apģērbu. (uzlabota subjekta skaidrība, paralēlisms un saskaņošana impersonālam teikumam)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "centraltirgus_riga",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "kad vissvaigākie produkti un mazāk pūļa.",
+        "fix": "kad ir vissvaigākie produkti un mazāks pūlis. (pievienots 'ir' teikuma pilnīgumam; 'mazāks pūlis' – pareiza salīdzinošā pakāpe vīriešu dzimtas lietvārdam nominativā)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "iepirksanas_interneta",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "lauku_tirdzini",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "saikni tarp pilsētas un laukiem",
+        "fix": "saikni starp pilsētu un laukiem (pareizs vārds 'starp'; akuzatīvs pēc 'starp': pilsētu, nevis pilsētas)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "lietotu_preču_veikali",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "Ekonomi un vides speciālisti",
+        "fix": "Ekonomisti un vides speciālisti (pareizs plurāla skaitļa vārds latviešu valodā)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "latvijas_mazes_veikals",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "ir svarīga ikdienas dzīves sastāvdaļa",
+        "fix": "ir svarīgas ikdienas dzīves sastāvdaļas (lietvārda dzimtes un skaitļa saskaņa ar subjektu 'maizes veikali')"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "pieaudzis interese",
+        "fix": "pieaugusi interese (dzimtas saskaņa ar 'interese' siev. dz.)"
+      },
+      {
+        "where": "body",
+        "type": "pieturzīmes",
+        "original": "„Lācis” un „Rīgas maiznīca”",
+        "fix": "\"Lācis\" un \"Rīgas maiznīca\" (standarta taisnās pēdiņas)"
+      },
+      {
+        "where": "q2",
+        "type": "jautājums",
+        "original": "Kāpēc pēdējos gados pieaudzis interese par maizes veikaliem Latvijā?",
+        "fix": "Kāpēc pēdējos gados pieaugusi interese par vietējiem produktiem? (precizitāte atbilstoši tekstam, saglabājot iemesla tipu; dzimtas labojums)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "ziemassvetku-galds",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "stils",
+        "original": "Iesaka izmantot svaigus produktus no vietējiem tirgiem un nedrīkst pārēsties treknu ēdienu.",
+        "fix": "Ieteicams izmantot svaigus produktus no vietējiem tirgiem un izvairīties no pārēšanās ar treknu ēdienu. (dabiskāks, loģiskāks stils bez fragmenta sajūtas un skolas valodas; 'ar treknu ēdienu' precīzāka idiomātiska izteiksme)"
+      },
+      {
+        "where": "q2",
+        "type": "jautājums",
+        "original": "Kāpēc ģimenes kopā gatavo Ziemassvētku ēdienus?",
+        "fix": "Kāpēc cilvēki sagādā produktus no tirgiem? (skaidrs iemesls tieši tekstā 'lai maltīte sagādātu prieku un siltumu'; iepriekšējais nav tieši atbildams no teksta, labāk aptver 'iemesls' tipu)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "skabi-kaposti-ziema",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "dzervenes_izmantosana",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "Dzērvenes ēd svaigas vai gatavo sulas, ievārījumus, pievieno tējai un putraimiem.",
+        "fix": "Dzērvenes ēd svaigas, gatavo sulas un ievārījumus, pievieno tējai un putraimiem. (padarīta paralēla infinitīvu struktūra bez nevajadzīgas 'vai', labāka saskaņošana)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "Tipiski pievieno gaļas ēdieniem garšai.",
+        "fix": "Tās parasti pievieno gaļas ēdieniem garšai. (pievienots skaidrs subjekts 'tās', 'tipiski' aizstāts ar 'parasti' dabiskākam stilam)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "latviesu_rudzu_maize",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "pelēj",
+        "fix": "pelē (pareiza 3. pers. viensk. no 'pelēt')"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "darza-zalites-teja",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "pieturzīmes",
+        "original": "Rīgā Centrāltirgū",
+        "fix": "Rīgā, Centrāltirgū (komats pēc apstāklis 'Rīgā')"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "brauksana_uz_lietuvu_un_igauniju",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "palielinājies",
+        "fix": "ir palielinājies (trūkst palīgvārda perfekta formā)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "pandēmijas pēc",
+        "fix": "pēc pandēmijas (pilnīgs teikums ar pareizu locījumu)"
+      },
+      {
+        "where": "q3",
+        "type": "gramatika",
+        "original": "Kādas transportlīdzekļa izmanto",
+        "fix": "Kādas transportlīdzekļus izmanto (pareizs akuzatīvs plurālam, subjekts izsecināms no konteksta)"
+      },
+      {
+        "where": "q4",
+        "type": "gramatika",
+        "original": "Ko nedrīkst aizmirst līdzi ņemot braucienā",
+        "fix": "Ko nedrīkst aizmirst paņemt līdzi braucienā (dabiska vārdu kārtība un locījums)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "jurmal_a_vasar_a",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "q5",
+        "type": "gramatika",
+        "original": "Ko iesaka tūrisma speciālisti apmeklējot Jūrmalu?",
+        "fix": "Ko iesaka tūrisma speciālisti, apmeklējot Jūrmalu? (pievienots komats pirms gerundija, lai nodalītu pievienoto noteicumu)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "celosana_velosipeds",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "ūdens pudele un karti",
+        "fix": "ūdens pudeli un karti (akuzatīva locījums saraksta saskaņošanai)"
+      },
+      {
+        "where": "q1",
+        "type": "gramatika",
+        "original": "Cik kilometru garu veido velomaršrutus Latvijā pēdējos desmit gados?",
+        "fix": "Cik kilometru apzīmēto velomaršrutu ir izveidoti Latvijā pēdējos desmit gados? (pareiza vārdu kārtība, locījumi un gramatiska struktūra atbilstoši tekstam)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "lidojumi_riga",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "kurosos",
+        "fix": "kurortos (pareizs vārds, drukas kļūda)"
+      },
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "Frankfurtes",
+        "fix": "Frankfurte (pareizs vietvārds nominatīvā, saraksta loceklis)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "atpusa_kurzeme_piekraste",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "Šāda atpūta ne tikai atpūta ķermeni, bet arī iepazīst Latvijas dabu un kultūru.",
+        "fix": "Šāda atpūta ne tikai atpūstina ķermeni, bet arī iepazīst Latvijas dabu un kultūru. (pareiza 3. mn. forma no 'atpūtināt')"
+      },
+      {
+        "where": "q1",
+        "type": "gramatika",
+        "original": "Kurās vietās Kurzemes piekrastē populāra atpūta?",
+        "fix": "Kurās vietās Kurzemes piekrastē ir populāra atpūta? (pievienots 'ir' pilnīgam jautājuma teikumam)"
+      },
+      {
+        "where": "q2",
+        "type": "gramatika",
+        "original": "Kāpēc Kurzemes piekraste pieaug popularitāte?",
+        "fix": "Kāpēc Kurzemes piekrastei pieaug popularitāte? (datīvs 'piekrastei' pareizai saskaņošanai)"
+      },
+      {
+        "where": "q5",
+        "type": "gramatika",
+        "original": "Ko iesaka tūrisma speciālisti apmeklējot Kurzemes piekrasti?",
+        "fix": "Ko iesaka tūrisma speciālisti, apmeklējot Kurzemes piekrasti? (komats pirms deminatīva)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "latviesu_rudens",
+    "confidence": 5,
+    "issues": [],
+    "applied": false
+  },
+  {
+    "id": "sniegotas_ziemass",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "stils",
+        "original": "gumijas zābaku virsū vilktnes",
+        "fix": "gumijzābaku virsvilkas (standarta termins latviešu valodā, nevis nepareizs salikteņš)"
+      },
+      {
+        "where": "q1",
+        "type": "gramatika",
+        "original": "Cik dienu gadā vidēji Latvijā sniedz pēdējos 20 gados?",
+        "fix": "Cik dienas gadā vidēji Latvijā nokritis sniegs pēdējos 20 gados? (pareizs locījums un darbības vārds atbilstoši tekstam ‘sniegs nokritis’)"
+      },
+      {
+        "where": "q1",
+        "type": "gramatika",
+        "original": "dienu",
+        "fix": "dienas (nominatīvs uz jautājuma subjektu atbilstoši tekstam ‘60 dienās’)"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "baltajas_naktis",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "q3",
+        "type": "gramatika",
+        "original": "Ko cilvēki dara baltās naktis?",
+        "fix": "Ko cilvēki dara baltās naktīs? (vajadzīgs lokatīvs 'naktīs')"
+      },
+      {
+        "where": "q5",
+        "type": "gramatika",
+        "original": "Ko iesaka dabas pētnieki darīt baltās naktis?",
+        "fix": "Ko iesaka dabas pētnieki darīt baltās naktīs? (vajadzīgs lokatīvs 'naktīs')"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "rudens_veni_un_lietus",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "ortogrāfija",
+        "original": "postītus",
+        "fix": "postījumus (pareizs vārds postījumiem akuzatīvā)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "impermeāblus jakas",
+        "fix": "ūdensnecaurlaidīgas jakas (dzimtes un skaitļa saskaņošana; anglicisma aizstāšana latvisku vārdu)"
+      },
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "Tas kļūst aktuāli",
+        "fix": "Tas kļūst aktuāls (vienskaitļa saskaņošana ar 'tas')"
+      }
+    ],
+    "applied": true
+  },
+  {
+    "id": "pavasara_atmoda",
+    "confidence": 5,
+    "issues": [
+      {
+        "where": "body",
+        "type": "gramatika",
+        "original": "koki sāku pumpuroties",
+        "fix": "koki sāk pumpurēties (nepareiza persona un forma; jābūt 3. pers. ds. 'sāk pumpurēties')"
+      }
+    ],
+    "applied": true
+  }
+]

@@ -187,62 +187,105 @@ SYSTEM_PROMPT = textwrap.dedent(
     Tu esi autors mācību tekstiem latviešu valodas eksāmenam PMLP programmai
     «Latvieši un līvi» — pirmajai daļai «Lasīšana». Tavs uzdevums ir rakstīt
     īsus informatīvi-publicistiskus tekstus latviski, kas pilnībā atbilst
-    oficiālajam paraugam (PUTNI ZIEMĀ).
+    oficiālajiem PMLP paraugiem (PUTNI ZIEMĀ, CITRONS).
 
-    STINGRAS PRASĪBAS KATRAM TEKSTAM:
-    - 110–140 vārdi kopā (neskaiti virsrakstu).
-    - 3 vai 4 rindkopas, atdalītas ar tukšu rindu.
-    - Neitrāls, publicistisks stils — NEVIS dialogs, NEVIS stāsts pirmajā
-      personā, NEVIS mākslinieciska proza. Tekstam jāizklausās kā raksts no
-      ikdienas preses vai informatīvas brošūras.
+    GARUMS — KRITISKI SVARĪGI:
+    - 130–155 vārdi kopā (mērķis apm. 140). NEPIEŅEMAMS ir īsāks teksts.
+    - 3 vai 4 rindkopas, atdalītas ar tukšu rindu (\\n\\n).
+    - Katra rindkopa — 35–50 vārdi.
+
+    STILS — KRITISKI SVARĪGI:
+    - Neitrāls informatīvi-publicistisks stils — kā raksts no žurnāla vai
+      informatīvas brošūras.
+    - NEVIS dialogs, NEVIS stāsts pirmajā personā ("es domāju..."),
+      NEVIS mākslinieciska proza, NEVIS reklāma, NEVIS mācību grāmatas stils.
     - Leksika — A2–B1 (bieži lietojama ikdienas un oficiālā leksika).
-    - Saturs: konkrēts temats, fakti + praktiski padomi + eksperta viedoklis
-      (piem., ornitologi, ārsti, speciālisti, vietējie iedzīvotāji) + sociāla
-      vai vides dimensija.
-    - Jāiekļauj vismaz viens skaitlis, viens salīdzinājums vai viens konkrēts
-      piemērs (Rīga, Latvijā, oktobrī utml.).
-    - Bez emojiem, bez zvaigznītēm, bez Markdown.
-    - Virsraksts — VIENS vārds vai īsa frāze LIELIEM BURTIEM, bez pieturzīmēm.
+    - Teksta saturs: vispārējs temata ievads → praktiska informācija /
+      padomi / fakti → eksperta viedoklis vai vispārināts secinājums.
+    - Vismaz viens skaitlis / datums / konkrēts piemērs (Rīgā, Latvijā,
+      oktobrī, pēdējos 10 gados, aptuveni 60 % utml.).
+    - Vismaz viens eksperta balss (ornitologi / ārsti / speciālisti /
+      vietējie iedzīvotāji / pētnieki).
+    - Virsraksts — VIENS vārds vai īsa frāze LIELIEM BURTIEM, bez
+      pieturzīmēm.
 
-    JAUTĀJUMI (vienmēr tieši 5):
-    - Tie ir mutiski jautājumi, uz kuriem students atbild skatoties uz tekstu.
-    - Pieci dažādi tipi: 1) fakts (Kas? Ko? Kur? Kad? Cik?), 2) iemesls
-      (Kāpēc?), 3) veids (Kā? Kādā veidā?), 4) detaļa (Kurš? Kāds? No kā?),
-      5) paplašinājums ar teksta informāciju (Ko vēl? Ko nedrīkst? Ko iesaka?).
-    - Atbildi uz katru jautājumu var atrast tekstā — NEVAJAG jautāt par to,
-      ko students domā pats no sevis.
-    - Jautājums 1–2 teikumi, bez iesākumiem «Lūdzu» vai «Pasakiet».
+    VALODAS PAREIZĪBA — KRITISKI SVARĪGI:
+    - Visas garumzīmes (ā, ē, ī, ū) un mīkstinājumzīmes (ķ, ļ, ņ, ģ) —
+      obligāti tur, kur tās pēc pareizrakstības noteikumiem nepieciešamas.
+    - Pareizi locījumi: lokatīvs ("Rīgā", nevis "Rīga"), ģenitīvs ("trīs
+      bērnu", nevis "trīs bērni"), akuzatīvs utt.
+    - Pareizas pēdiņas: „..." vai "..." (NEVIS neitralās " ").
+    - Bez kalkām no krievu/angļu ("izmantot iespēju" nepareizi nāk no
+      krievu "использовать возможность" — vietā izmanto "izmantot kādu
+      iespēju" vai "gūt iespēju").
+    - Bez anglicismiem un jaunloģismiem.
+    - Bez emojiem, bez Markdown, bez zvaigznītēm.
 
-    ATBILDES FORMĀTS — STRIKTI JSON (bez Markdown, bez komentāriem):
+    JAUTĀJUMI — VIENMĒR TIEŠI 5:
+    - Tie ir mutiski jautājumi, uz kuriem students atbild, SKATOTIES
+      TEKSTU. Katram jautājumam atbilde OBLIGĀTI IR ATRODAMA tekstā.
+    - 5 DAŽĀDI tipi (ne divi vienādi):
+      1) FAKTS (Kas? Ko? Kur? Kad? Cik?)
+      2) IEMESLS / NOLŪKS (Kāpēc? Kādēļ? Kāda iemesla dēļ?)
+      3) VEIDS / PROCESS (Kā? Kādā veidā? Ko dara...?)
+      4) DETAĻA / KVALITĀTE (Kurš? Kāds? No kā?)
+      5) PAPLAŠINĀJUMS ar teksta informāciju (Ko iesaka? Ko nedrīkst?
+         Ko arī var darīt? Kādi vēl...?)
+    - Jautājums īss: 1 teikums, bez iesākumiem «Lūdzu» vai «Pasakiet».
+
+    ATBILDES FORMĀTS — STRIKTI JSON (bez Markdown, bez ``` blokiem, bez
+    komentāriem):
     {"texts":[{"id":"slug","title_lv":"NOSAUKUMS","topic":"topic_slug",
     "body":"1. rindkopa.\\n\\n2. rindkopa.\\n\\n3. rindkopa.\\n\\n4. rindkopa.",
     "questions":["1?","2?","3?","4?","5?"]}, ...]}
 
-    «topic» vienmēr no dotā saraksta. «id» — īss angļu slug ar pasvītrojumiem
-    (piem., "janu_svetki"). Garumzīmes ō, ā, ē, ī, ū, č, š, ž, ķ, ļ, ņ, ģ —
-    obligātas tur, kur tās nepieciešamas.
+    «topic» — tieši viens no dotā saraksta. «id» — īss angļu slug ar
+    pasvītrojumiem (piem., "janu_svetki", "velosipeds_latvija").
     """
 ).strip()
 
 
-def build_user_prompt(batch: list[tuple[str, str]]) -> str:
+def build_user_prompt(topic_slug: str, subtopic: str) -> str:
+    topic_full = TOPICS[topic_slug]
+    # Only the long seed in the prompt — the short one anchors the model too low.
+    ref = SEED_TEXTS[0]
+    ref_wc = len(ref["body"].split())
     lines = []
-    lines.append("Uzraksti šos tekstus (šajā partijā {n} gab.):".format(n=len(batch)))
-    for i, (topic_slug, subtopic) in enumerate(batch, 1):
-        topic_full = TOPICS[topic_slug]
-        lines.append(f"{i}. topic={topic_slug} ({topic_full}). Apakštēma: {subtopic}")
+    lines.append("Uzraksti VIENU tekstu:")
+    lines.append(f"- topic = {topic_slug} ({topic_full})")
+    lines.append(f"- apakštēma = {subtopic}")
     lines.append("")
-    lines.append("OFICIĀLIE PARAUGI (rakstī tieši tādā stilā un garumā):")
-    for seed in SEED_TEXTS:
-        lines.append("")
-        lines.append(f"NOSAUKUMS: {seed['title_lv']}")
-        lines.append(seed["body"])
-        lines.append("")
-        lines.append("JAUTĀJUMI:")
-        for q in seed["questions"]:
-            lines.append(f"- {q}")
+    lines.append("STINGRA STRUKTŪRA — rakstī TIEŠI 4 rindkopas šādā kārtībā:")
+    lines.append("  1) IEVADS (40-45 vārdi): par ko būs teksts, kāpēc tas aktuāli,")
+    lines.append("     ar kādu emocionālo vai sociālo kontekstu tas saistās Latvijā.")
+    lines.append("  2) FAKTI (40-45 vārdi): konkrēti skaitļi, datumi, vietu nosaukumi,")
+    lines.append("     piemēri no ikdienas (piem., 'pēdējos 10 gados', 'aptuveni 60 %',")
+    lines.append("     'Rīgā', 'oktobrī', 'Centrāltirgū').")
+    lines.append("  3) DETAĻAS UN PADOMI (40-45 vārdi): kā tas notiek praksē,")
+    lines.append("     ko cilvēki dara, ko iesaka / ko nedrīkst, tipiskas situācijas.")
+    lines.append("  4) SECINĀJUMS / EKSPERTA VIEDOKLIS (30-35 vārdi): ko iesaka")
+    lieks = (
+        "     speciālisti (ornitologi, ārsti, sociologi, vēsturnieki utml.);"
+        " vispārināts secinājums par tēmu."
+    )
+    lines.append(lieks)
     lines.append("")
-    lines.append("Atgriez visu partiju vienā JSON objektā ar atslēgu \"texts\".")
+    lines.append("KOPĀ: 150-170 vārdi. Ja pēc sākuma melnrakstа sanāk īsāks par")
+    lines.append("145 vārdiem — izvērs katru rindkopu, līdz sasniedz vismaz 145.")
+    lines.append("")
+    lines.append(f"OFICIĀLS PARAUGS no PMLP ({ref_wc} vārdi — tādā stilā):")
+    lines.append("")
+    lines.append(f"NOSAUKUMS: {ref['title_lv']}")
+    lines.append(ref["body"])
+    lines.append("")
+    lines.append("JAUTĀJUMI:")
+    for q in ref["questions"]:
+        lines.append(f"- {q}")
+    lines.append("")
+    lines.append(
+        'Atgriez JSON: {"texts":[{"id":"slug","title_lv":"NOSAUKUMS",'
+        '"topic":"topic_slug","body":"...","questions":["1?","2?","3?","4?","5?"]}]}'
+    )
     return "\n".join(lines)
 
 
@@ -258,22 +301,64 @@ def load_env() -> None:
         os.environ.setdefault(k, v)
 
 
-def generate_batch(client: OpenAI, model: str, batch: list[tuple[str, str]]) -> list[dict[str, Any]]:
-    resp = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": build_user_prompt(batch)},
-        ],
-        temperature=0.9,
-        response_format={"type": "json_object"},
-    )
-    raw = resp.choices[0].message.content or "{}"
-    data = json.loads(raw)
-    texts = data.get("texts", [])
-    if not isinstance(texts, list):
-        raise ValueError(f"Expected list under 'texts', got: {type(texts).__name__}")
-    return texts
+def _count_words(s: str) -> int:
+    return len([w for w in s.split() if w])
+
+
+def generate_one(
+    client: OpenAI, model: str, topic_slug: str, subtopic: str, retries: int = 4
+) -> dict[str, Any] | None:
+    """Keep regenerating until length + paragraph structure pass. On the final
+    attempt we relax the floor to 130 so a stubbornly short text still lands."""
+    best_fallback: dict[str, Any] | None = None
+    for attempt in range(retries + 1):
+        resp = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": build_user_prompt(topic_slug, subtopic)},
+            ],
+            temperature=1.0,
+            response_format={"type": "json_object"},
+        )
+        raw = resp.choices[0].message.content or "{}"
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        arr = data.get("texts") or []
+        if not isinstance(arr, list) or not arr:
+            continue
+        t = arr[0]
+        if not all(k in t for k in ("id", "title_lv", "topic", "body", "questions")):
+            continue
+        if len(t["questions"]) != 5 or t["topic"] not in TOPICS:
+            continue
+        n = _count_words(t["body"])
+        paragraphs = t["body"].count("\n\n") + 1
+        if paragraphs < 3 or paragraphs > 5:
+            print(
+                f"    retry {attempt + 1}: paragraphs={paragraphs}",
+                file=sys.stderr, flush=True,
+            )
+            continue
+        # Track the longest draft so we can fall back on it if retries exhaust.
+        if best_fallback is None or n > _count_words(best_fallback["body"]):
+            best_fallback = t
+        if 135 <= n <= 170:
+            return t
+        print(
+            f"    retry {attempt + 1}: got {n} words (want 135-170)",
+            file=sys.stderr, flush=True,
+        )
+    # All retries failed — accept the longest draft we saw if it's at least 128.
+    if best_fallback is not None and _count_words(best_fallback["body"]) >= 128:
+        print(
+            f"    fallback: accepting {_count_words(best_fallback['body'])}-word draft",
+            file=sys.stderr, flush=True,
+        )
+        return best_fallback
+    return None
 
 
 def main() -> int:
@@ -285,30 +370,25 @@ def main() -> int:
     model = os.environ.get("XAI_MODEL", "grok-4-1-fast")
     client = OpenAI(api_key=api_key, base_url="https://api.x.ai/v1")
 
-    # Flatten subtopics into batches of 10
     all_pairs: list[tuple[str, str]] = []
     for topic_slug, subs in SUBTOPICS.items():
         for sub in subs:
             all_pairs.append((topic_slug, sub))
-    batch_size = 10
-    batches = [all_pairs[i:i + batch_size] for i in range(0, len(all_pairs), batch_size)]
 
     all_texts: list[dict[str, Any]] = list(SEED_TEXTS)
-    for i, batch in enumerate(batches, 1):
-        print(f"[{i}/{len(batches)}] generating {len(batch)} texts...", flush=True)
+    failed: list[str] = []
+    for i, (topic_slug, sub) in enumerate(all_pairs, 1):
+        print(f"[{i}/{len(all_pairs)}] {topic_slug:15s} {sub[:35]:35s} ", end="", flush=True)
         start = time.time()
-        try:
-            texts = generate_batch(client, model, batch)
-        except Exception as e:
-            print(f"  batch {i} failed: {e}", file=sys.stderr)
-            return 2
+        t = generate_one(client, model, topic_slug, sub)
         dur = time.time() - start
-        print(f"  got {len(texts)} in {dur:.1f}s", flush=True)
-        # Normalize: ensure every entry has required keys, drop if not
-        for t in texts:
-            if all(k in t for k in ("id", "title_lv", "topic", "body", "questions")):
-                if len(t["questions"]) == 5 and t["topic"] in TOPICS:
-                    all_texts.append(t)
+        if t is None:
+            print(f"FAIL ({dur:.1f}s)", flush=True)
+            failed.append(f"{topic_slug}:{sub}")
+            continue
+        n = _count_words(t["body"])
+        print(f"{n}w ({dur:.1f}s)", flush=True)
+        all_texts.append(t)
 
     # Deduplicate by id
     seen: set[str] = set()
