@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { api } from "../api";
 import { useRecorder } from "../hooks/useRecorder";
+import { useSwipe } from "../hooks/useSwipe";
 import { haptic, notify, showBackButton } from "../tg";
 
 type Phase = "listen" | "record" | "compare" | "done";
@@ -115,6 +116,15 @@ export default function Shadowing() {
     setPhase("listen");
   }
 
+  function prev() {
+    if (idx === 0) return;
+    haptic("soft");
+    setUserBlob(null);
+    setOrigUrl(null);
+    setIdx(idx - 1);
+    setPhase("listen");
+  }
+
   if (err) return <div className="screen"><div className="toast">{err}</div></div>;
   if (!cur) {
     return (
@@ -143,8 +153,22 @@ export default function Shadowing() {
     );
   }
 
+  // Carousel-style: swipe left → next phrase, swipe right → previous phrase.
+  // Suppressed while the user is actively recording so we don't eat the
+  // recorded blob mid-gesture.
+  const swipe = useSwipe({
+    onLeft: () => {
+      if (rec.recording) return;
+      next();
+    },
+    onRight: () => {
+      if (rec.recording) return;
+      prev();
+    },
+  });
+
   return (
-    <div className="screen">
+    <div className="screen" {...swipe}>
       <div className="topbar">
         <button className="icon-pill" onClick={() => navigate("/")}>‹</button>
         <div style={{ flex: 1 }}>

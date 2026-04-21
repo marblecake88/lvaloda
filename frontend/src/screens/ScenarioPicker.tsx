@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { api, ScenarioCatalog, ScenarioSummary } from "../api";
+import { useSwipe } from "../hooks/useSwipe";
 import { haptic, showBackButton } from "../tg";
 
 type Tab = "exam" | "daily";
@@ -44,8 +45,24 @@ export default function ScenarioPicker({ initialTab }: Props) {
     else navigate(`/chat/${key}`);
   }
 
+  // Horizontal swipe between the two tabs (exam ↔ daily).
+  const swipe = useSwipe({
+    onLeft: () => {
+      if (tab !== "daily") {
+        haptic("soft");
+        setTab("daily");
+      }
+    },
+    onRight: () => {
+      if (tab !== "exam") {
+        haptic("soft");
+        setTab("exam");
+      }
+    },
+  });
+
   return (
-    <div className="screen">
+    <div className="screen" {...swipe}>
       <div className="topbar">
         <button className="icon-pill" onClick={() => navigate("/")}>‹</button>
         <div className="topbar-title">

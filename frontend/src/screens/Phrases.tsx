@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../api";
+import { useSwipe } from "../hooks/useSwipe";
 import { haptic, notify, showBackButton } from "../tg";
 
 interface Category {
@@ -296,8 +297,29 @@ export function PhraseDrill() {
   const totalInDeck = deck.length;
   const seen = totalInDeck - queue.length + 1;
 
+  // Swipes on the flashcard: right = Zinu, left = Nezinu, down = Atpakaļ (undo).
+  // Only active once the card has been flipped, so the learner has actually
+  // seen the Latvian side before committing an answer.
+  const swipe = useSwipe({
+    onRight: () => {
+      if (!flipped) return;
+      haptic("soft");
+      next(true);
+    },
+    onLeft: () => {
+      if (!flipped) return;
+      haptic("soft");
+      next(false);
+    },
+    onDown: () => {
+      if (undo.length === 0) return;
+      haptic("soft");
+      back();
+    },
+  });
+
   return (
-    <div className="screen">
+    <div className="screen" {...swipe}>
       <div className="topbar">
         <button className="icon-pill" onClick={() => navigate("/phrases")}>‹</button>
         <div style={{ flex: 1 }}>
