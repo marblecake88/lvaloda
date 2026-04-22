@@ -125,6 +125,20 @@ export default function Shadowing() {
     setPhase("listen");
   }
 
+  // Carousel-style: swipe left → next phrase, swipe right → previous phrase.
+  // Must sit above the early returns (Rules of Hooks). Guards inside handle
+  // the "recording" / "done" cases.
+  const swipe = useSwipe({
+    onLeft: () => {
+      if (rec.recording || phase === "done" || !cur) return;
+      next();
+    },
+    onRight: () => {
+      if (rec.recording || phase === "done" || !cur) return;
+      prev();
+    },
+  });
+
   if (err) return <div className="screen"><div className="toast">{err}</div></div>;
   if (!cur) {
     return (
@@ -152,20 +166,6 @@ export default function Shadowing() {
       </div>
     );
   }
-
-  // Carousel-style: swipe left → next phrase, swipe right → previous phrase.
-  // Suppressed while the user is actively recording so we don't eat the
-  // recorded blob mid-gesture.
-  const swipe = useSwipe({
-    onLeft: () => {
-      if (rec.recording) return;
-      next();
-    },
-    onRight: () => {
-      if (rec.recording) return;
-      prev();
-    },
-  });
 
   return (
     <div className="screen" {...swipe}>

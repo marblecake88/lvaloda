@@ -34,18 +34,8 @@ export default function ScenarioPicker({ initialTab }: Props) {
     setTab(initialTab);
   }, [initialTab, location.pathname]);
 
-  if (err) return <div className="screen"><div className="toast">{err}</div></div>;
-  if (!catalog) return <div className="screen"><div className="loader">Ielādē…</div></div>;
-
-  const list: ScenarioSummary[] = tab === "exam" ? catalog.exam : catalog.daily;
-
-  function onPick(key: string) {
-    haptic("light");
-    if (tab === "exam") navigate(`/exam/prep/${key}`);
-    else navigate(`/chat/${key}`);
-  }
-
   // Horizontal swipe between the two tabs (exam ↔ daily).
+  // Must be declared above the early returns to satisfy Rules of Hooks.
   const swipe = useSwipe({
     onLeft: () => {
       if (tab !== "daily") {
@@ -60,6 +50,17 @@ export default function ScenarioPicker({ initialTab }: Props) {
       }
     },
   });
+
+  if (err) return <div className="screen"><div className="toast">{err}</div></div>;
+  if (!catalog) return <div className="screen"><div className="loader">Ielādē…</div></div>;
+
+  const list: ScenarioSummary[] = tab === "exam" ? catalog.exam : catalog.daily;
+
+  function onPick(key: string) {
+    haptic("light");
+    if (tab === "exam") navigate(`/exam/prep/${key}`);
+    else navigate(`/chat/${key}`);
+  }
 
   return (
     <div className="screen" {...swipe}>

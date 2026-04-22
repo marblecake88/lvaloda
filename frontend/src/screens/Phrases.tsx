@@ -206,6 +206,27 @@ export function PhraseDrill() {
     }
   }
 
+  // Hooks must run on every render in the same order — define the swipe
+  // binding BEFORE any early returns below. Guards inside each callback
+  // cover the "not ready / already done" cases.
+  const swipe = useSwipe({
+    onRight: () => {
+      if (done || !flipped) return;
+      haptic("soft");
+      next(true);
+    },
+    onLeft: () => {
+      if (done || !flipped) return;
+      haptic("soft");
+      next(false);
+    },
+    onDown: () => {
+      if (done || undo.length === 0) return;
+      haptic("soft");
+      back();
+    },
+  });
+
   if (err) return <div className="screen"><div className="toast">{err}</div></div>;
   if (!deck.length) return <div className="screen"><div className="loader">Ielādē…</div></div>;
 
@@ -296,27 +317,6 @@ export function PhraseDrill() {
 
   const totalInDeck = deck.length;
   const seen = totalInDeck - queue.length + 1;
-
-  // Swipes on the flashcard: right = Zinu, left = Nezinu, down = Atpakaļ (undo).
-  // Only active once the card has been flipped, so the learner has actually
-  // seen the Latvian side before committing an answer.
-  const swipe = useSwipe({
-    onRight: () => {
-      if (!flipped) return;
-      haptic("soft");
-      next(true);
-    },
-    onLeft: () => {
-      if (!flipped) return;
-      haptic("soft");
-      next(false);
-    },
-    onDown: () => {
-      if (undo.length === 0) return;
-      haptic("soft");
-      back();
-    },
-  });
 
   return (
     <div className="screen" {...swipe}>
