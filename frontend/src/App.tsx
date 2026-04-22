@@ -1,4 +1,6 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import { useEdgeBackSwipe } from "./hooks/useEdgeBackSwipe";
+import { haptic } from "./tg";
 import Home from "./screens/Home";
 import ScenarioPicker from "./screens/ScenarioPicker";
 import Chat from "./screens/Chat";
@@ -16,6 +18,19 @@ import ReadingPicker from "./screens/ReadingPicker";
 import Translate from "./screens/Translate";
 
 export default function App() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Edge-swipe-from-left → back. Disabled on Home so it can't try to
+  // pop past the entry route (would be a no-op anyway).
+  useEdgeBackSwipe(
+    () => {
+      haptic("soft");
+      navigate(-1);
+    },
+    { enabled: location.pathname !== "/" },
+  );
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />
